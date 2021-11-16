@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te recomendamos un personaje</title>
+    <link rel="icon" href="../imagenes/iconoapex.jpg" type="image">
+</head>
+<body>
+    <article>
+        <h1><strong>¿No sabes que personaje elegir?</strong></h1>
+        <font size= 4><p> Nosotros te ayudamos mediante un formulario y ademas entraras en el sorteo de un aspecto:</h3></font> 
+        <form action= "http://httpbin.org/post"  method="post">
+            <div>
+                <label for="Name"><strong>Nombre:</strong></label>
+                <input type="text" id="Name" name="Nombre" placeholder="EJ: Juán" required autofocus>  
+                    <br><br>
+                <label for="Last name 1"><strong>Apellido 1:</strong></label>
+                <input type="text" id="Last name 1" name="Apellido1" placeholder="EJ: Perez" required>
+                    <br><br>
+                <label for="Last name 2"><strong>Apellido 2:</strong></label>
+                <input type="text" id="Last name 2" name="Apellido2" placeholder="EJ: Martín" >
+                    <br><br>
+                <label for="mail"><strong>Correo electronico:</strong></label>
+                <input type="email" id="mail" name="Correo electronico" placeholder="EJ: juanperez@gmail.com" required>
+                    <br><br>
+                <label for="phone"><strong>Correo electronico:</strong></label>
+                <input type="number" id="phone" name="Numero Telefono" placeholder="EJ: 578858479" required>
+            </div>
+            <div>
+                <h2>Elige en cada caso segun:</h2>
+                <fieldset>
+                    <legend><strong>Habilidades:</strong></legend>
+                    <label for="Defensivas">Defensivas</label>
+                    <input type="radio" id="Defensivas" name="habilidades" value= "Defensivas"> 
+                        <br>
+                    <label for="Ofensivas">Ofensivas</label>
+                    <input type="radio" id="Ofensivas" name="habilidades" value=" Ofensivas">
+                        <br>
+                    <label for="Evasivas">Evasivas</label>
+                    <input type="radio" id="Evasivas" name="habilidades" value=" Evasivas">
+                        <br>
+                </fieldset>
+                <fieldset>
+                        <legend><strong>Distancia de disparo:</strong></legend>
+                        <label for="distanciadisparo"></label>
+                        <select name="Distancia de disparo" id="distanciadisparo" required>
+                            <option value="Larga">Larga</option>
+                            <option value="Media">Media</option>
+                            <option value="Corta">Corta</option>
+                        </select>
+                        <br>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Preferencia de ataque:</strong></legend>
+                    <label for="ataquerapido">Ataque Rapido</label>
+                    <input type="checkbox" id="ataquerapido" name="Preferencia de ataque R" multiple> 
+                        <br>
+                    <label for="ataquecalmado">Ataque pausado</label>
+                    <input type="checkbox" id="ataquecalmado" name="Preferencia de ataque L" multiple>
+                        <br>
+                    <label for="evitarlo">Evitarlo</label>
+                    <input type="checkbox" id="evitarlo" name="Preferencia de ataque NO" multiple>
+                        <br>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Movilidad:</strong></legend>
+                    <input list="movilidad" name="Movilidad" required>
+                    <datalist id="movilidad">
+                        <option value="Amplia"></option>
+                        <option value="Normal"></option>
+                        <option value="Reducida"></option>
+                    </datalist>
+                </fieldset>
+                        <br>               
+            </div>
+
+                <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </article>
+    <footer>
+        <center><p>Autor: Iván Brabo ASIR 1º contacto: <a href="https://www.google.com/intl/es/gmail/about/">it.ibrabo.1964@iespabloserrano.com</a></p></center>
+    </footer>
+</body>
+</html>
